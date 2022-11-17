@@ -1,0 +1,38 @@
+@media (max-width: 1350px) {
+  .nav {
+    padding: 20px 20px 0;
+    margin-bottom: 100px;
+  }
+  .nav__item + .nav__item {
+    margin-left: 30px;
+  }
+  .nav__btn-img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  .nav__btn-inner {
+    font-size: 0;
+    padding: 8px 8px;
+    margin-bottom: 9px;
+  }
+}
+@media (max-width: 850px) {
+  .nav__list {
+    position: relative;
+  }
+  .nav__list-inner {
+    position: absolute;
+    flex-direction: column;
+    transform: translate(-50%, -120%);
+  }
+  .nav__list-menu {
+    display: block;
+  }
+  .nav__item {
+    text-align: center;
+  }
+  .nav__item + .nav__item {
+    margin: 0;
+  }
+}

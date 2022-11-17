@@ -36,9 +36,12 @@ body {
 .header {
   max-width: 1920px;
   height: 100vh;
+}
+.header__top {
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
 }
 .header__title {
   font-weight: 700;
@@ -117,8 +120,16 @@ body {
   flex-basis: 0;
   flex-grow: 1;
 }
-.nav__list {
+.nav__list-inner {
   display: flex;
+}
+.nav__list-menu {
+  display: none;
+}
+.nav__item {
+  background-color: #121212;
+  padding: 0 5px;
+  border-radius: 7px;
 }
 .nav__item + .nav__item {
   margin-left: 56px;
@@ -127,6 +138,9 @@ body {
   flex-basis: 0;
   flex-grow: 1;
   text-align: right;
+}
+.nav__btn-img {
+  display: none;
 }
 .nav__btn-inner {
   color: #fff;
@@ -139,7 +153,7 @@ body {
 
 .countdown {
   display: flex;
-  margin-bottom: 224px;
+  padding-bottom: 224px;
 }
 .countdown__item {
   background-color: #121212;

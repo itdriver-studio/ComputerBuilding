@@ -1,0 +1,30 @@
+@media ( max-width: 1350px )
+  .nav
+    padding: 20px 20px 0
+    margin-bottom: 100px
+    &__item + .nav__item
+      margin-left: 30px
+    &__btn
+      &-img
+        display: block
+        width: 24px
+        height: 24px
+      &-inner
+        font-size: 0
+        padding: 8px 8px
+        margin-bottom: 9px
+@media ( max-width: 850px )
+  .nav
+    &__list
+      position: relative
+      &-inner
+        position: absolute
+        flex-direction: column
+        // transform: translateX(-50%)
+        transform: translate(-50%, -120%)
+      &-menu
+        display: block
+    &__item
+      text-align: center
+    &__item + .nav__item
+      margin: 0

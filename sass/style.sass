@@ -30,9 +30,11 @@ body
 .header
   max-width: 1920px
   height: 100vh
-  background-image: url(../img/header-bg.jpg)
-  background-repeat: no-repeat
-  background-size: cover
+  &__top
+    background-image: url(../img/header-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top right
   &__title
     font-weight: 700
     font-size: 64px
@@ -94,13 +96,22 @@ body
     flex-basis: 0
     flex-grow: 1
   &__list
-    display: flex
+    &-inner
+      display: flex
+    &-menu
+      display: none
+  &__item
+    background-color: #121212
+    padding: 0 5px
+    border-radius: 7px
   &__item + .nav__item
     margin-left: 56px
   &__btn
     flex-basis: 0
     flex-grow: 1
     text-align: right
+    &-img
+      display: none
     &-inner
       color: #fff
       padding: 10px 30px
@@ -110,7 +121,7 @@ body
       border-radius: 50px
 .countdown
   display: flex
-  margin-bottom: 224px
+  padding-bottom: 224px
   &__item
     background-color: #121212
     padding: 20px 33px
