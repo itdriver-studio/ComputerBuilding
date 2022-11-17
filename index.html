@@ -13,48 +13,81 @@
 <body>
 
   <header class="header">
-    <nav class="nav">
-      <img class="header__logo" src="" alt="">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Курсы</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Расписание</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Преподаватели</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Рассылка</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__item-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <button class="nav__btn">Зайти в кабинет</button>
-    </nav>
-    <div class="container">
-      <h1 class="header__title">Первый курс
-        по компьютерной сборке</h1>
-      <div class="header__countdown">
-        <div class="countdown__item">
-          <div class="countdown__item-num"></div>
-          <div class="countdown__item-text"></div>
+    <div class="header__top">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img class="nav__logo-img" src="img/header__logo.svg" alt="logo">
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Курсы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Расписание</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Преподаватели</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Рассылка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="nav__btn">
+          <button class="nav__btn-inner">Зайти в кабинет</button>
+
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="header__title">Первый курс <br>
+          по компьютерной сборке</h1>
+        <div class="countdown">
+          <div class="countdown__item">
+            <div class="countdown__item-num">18</div>
+            <div class="countdown__item-text">Дней</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__item-num">18</div>
+            <div class="countdown__item-text">Часов</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__item-num">18</div>
+            <div class="countdown__item-text">Минут</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__item-num">18</div>
+            <div class="countdown__item-text">Часов</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="header__bottom">
-      <button class="header__btn">Заказать курс</button>
-      <div class="header__students">
-        <p class="header__students-text">Учеников всего: 200</p>
-        <p class="header__students-text">Успешно закончили курс: 190</p>
-      </div>
-      <div class="header__progressbar">
-        <div class="header__progressbar-text"></div>
+      <div class="container">
+        <div class="header__bottom-inner">
+          <button class="header__btn">Заказать курс</button>
+          <div class="header__students">
+            <p class="header__students-text">Учеников всего: <span class="header__students-text--start">200</span></p>
+            <p class="header__students-text">Успешно закончили курс: <span
+                class="header__students-text--start">190</span>
+            </p>
+          </div>
+          <div class="header__progressbar">
+            <div class="header__progressbar-text">Заработано учениками: <span class="header__progressbar-text--num">
+                400000</span></div>
+            <div class="header__progressbar-img">
+              <div class="header__progressbar-scale"></div>
+            </div>
+            <div class="header__progressbar-num">
+              <p class="header__progressbar-num--start">0</p>
+              <p class="header__progressbar-num--end">1000000</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
