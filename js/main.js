@@ -10,4 +10,5 @@ scale.style.width = scaleWidth + '%';
 
 burger.onclick = () => {
   adaptiveMenu.classList.toggle('nav__list-inner--adaptive')
+  burger.classList.toggle('nav__list-menuimg--close')
 }
