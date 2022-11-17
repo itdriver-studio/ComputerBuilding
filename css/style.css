@@ -160,7 +160,6 @@ body {
 
 .countdown {
   display: flex;
-  padding-bottom: 224px;
 }
 .countdown__item {
   background-color: #121212;
@@ -179,4 +178,8 @@ body {
 }
 .countdown__item + .countdown__item {
   margin-left: 30px;
+}
+
+.works {
+  background-color: #000;
 }

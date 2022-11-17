@@ -39,15 +39,15 @@
     position: absolute;
     flex-direction: column;
     transform: translate(-116px, -140%);
-    transition: all 0.7s;
+    transition: all 1s;
   }
   .nav__list-inner--adaptive {
     transform: translate(-116px, 10%);
-    z-index: 1;
+    z-index: 10;
   }
   .nav__list-menuimg {
     display: block;
-    transition: all 0.5s;
+    z-index: 2;
   }
   .nav__list-menuimg--close {
     transform: scaleY(-1);
