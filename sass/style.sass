@@ -22,19 +22,23 @@ body
   font-weight: 400
   font-size: 16px
   line-height: 24px
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
 
 .container
   max-width: 1320px
   padding: 0 10px
   margin: 0 auto
 .header
+  position: relative
   max-width: 1920px
   height: 100vh
+  background-image: url(../img/header-bg.jpg)
+  background-position: top right
+  margin: 0 auto
+  background-size: cover
+
   &__top
-    background-image: url(../img/header-bg.jpg)
     background-repeat: no-repeat
-    background-size: cover
-    background-position: top right
   &__title
     font-weight: 700
     font-size: 64px
@@ -42,6 +46,10 @@ body
     margin-bottom: 50px
   &__bottom
     background-color: #121212
+    position: absolute
+    bottom: 0
+    width: 100%
+    max-width: 1920px
     &-inner
       display: flex
       padding: 30px 0
@@ -98,12 +106,13 @@ body
   &__list
     &-inner
       display: flex
-    &-menu
+    &-menuimg
       display: none
   &__item
     background-color: #121212
     padding: 0 5px
     border-radius: 7px
+    text-align: center
   &__item + .nav__item
     margin-left: 56px
   &__btn
@@ -124,14 +133,15 @@ body
   padding-bottom: 224px
   &__item
     background-color: #121212
-    padding: 20px 33px
     text-align: center
     &-num
+      padding: 20px 33px 0
       font-size: 36px
       line-height: 50.4px
       font-weight: 700
     &-text
       line-height: 22.4px
       opacity: .4
+      padding-bottom: 20px
     & + .countdown__item
       margin-left: 30px

@@ -25,6 +25,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
 
 .container {
@@ -34,14 +35,16 @@ body {
 }
 
 .header {
+  position: relative;
   max-width: 1920px;
   height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-position: top right;
+  margin: 0 auto;
+  background-size: cover;
 }
 .header__top {
-  background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
 }
 .header__title {
   font-weight: 700;
@@ -51,6 +54,10 @@ body {
 }
 .header__bottom {
   background-color: #121212;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 1920px;
 }
 .header__bottom-inner {
   display: flex;
@@ -123,13 +130,14 @@ body {
 .nav__list-inner {
   display: flex;
 }
-.nav__list-menu {
+.nav__list-menuimg {
   display: none;
 }
 .nav__item {
   background-color: #121212;
   padding: 0 5px;
   border-radius: 7px;
+  text-align: center;
 }
 .nav__item + .nav__item {
   margin-left: 56px;
@@ -157,10 +165,10 @@ body {
 }
 .countdown__item {
   background-color: #121212;
-  padding: 20px 33px;
   text-align: center;
 }
 .countdown__item-num {
+  padding: 20px 33px 0;
   font-size: 36px;
   line-height: 50.4px;
   font-weight: 700;
@@ -168,6 +176,7 @@ body {
 .countdown__item-text {
   line-height: 22.4px;
   opacity: 0.4;
+  padding-bottom: 20px;
 }
 .countdown__item + .countdown__item {
   margin-left: 30px;

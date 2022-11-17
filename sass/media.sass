@@ -13,18 +13,73 @@
         font-size: 0
         padding: 8px 8px
         margin-bottom: 9px
+@media ( max-width: 1180px )
+  .header
+    &__bottom
+      &-inner
+        flex-wrap: wrap
+    &__progressbar
+      width: 100%
 @media ( max-width: 850px )
   .nav
     &__list
       position: relative
       &-inner
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+        width: 290px
+        padding: 20px
         position: absolute
         flex-direction: column
-        // transform: translateX(-50%)
-        transform: translate(-50%, -120%)
-      &-menu
+        transform: translate(-43%, -140%)
+        transition: all .7s
+        &--adaptive
+          transform: translate(-43%, 10%)
+          z-index: 1
+      &-menuimg
         display: block
+    &__item + .nav__item
+      margin-left: 0
     &__item
       text-align: center
-    &__item + .nav__item
-      margin: 0
+      margin: 0 0 10px
+      padding: 15px
+@media ( max-width: 570px )
+  .header
+    &__title
+      font-size: 50px
+      line-height: 70px
+  .nav
+    margin-bottom: 30px
+  .countdown
+    &__item
+      &-num
+        font-size: 25px
+        line-height: 36px
+      &-text
+        font-size: 12px
+
+@media ( max-width: 500px )
+  .header
+    &__title
+      font-size: 30px
+      line-height: 40px
+    &__progressbar
+      margin-top: 20px
+      &-text
+        &--num
+          margin-left: 15px
+
+  .countdown
+    width: 100%
+    flex-wrap: wrap
+    justify-content: space-evenly
+    &__item
+      margin-right: 20px
+      margin-bottom: 20px
+
+      & + .countdown__item
+        margin-left: 0px
+@media ( max-width: 500px )
+.header
+  &__btn
+    margin-bottom: 20px
