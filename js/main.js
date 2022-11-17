@@ -12,3 +12,16 @@ burger.onclick = () => {
   adaptiveMenu.classList.toggle('nav__list-inner--adaptive')
   burger.classList.toggle('nav__list-menuimg--close')
 }
+
+let seconds = document.querySelector('#seconds');
+let minutes = document.querySelector('#minutes');
+let totalTime = 3600;
+
+setInterval(() => {
+  let m = Math.floor(totalTime / 60);
+  let s = totalTime % 60;
+  s = s < 10 ? "0" + s : s
+  seconds.innerHTML = s;
+  minutes.innerHTML = m;
+  totalTime--;
+}, 1000);
