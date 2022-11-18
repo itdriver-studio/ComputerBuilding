@@ -16,15 +16,20 @@
         padding: 8px 8px
         margin-bottom: 16px
 @media ( max-width: 1180px )
+  section
+    margin-top: 50px
   .header
     &__bottom
       &-inner
         flex-wrap: wrap
     &__progressbar
       width: 100%
+  .works
+    &__inner
+      align-items: flex-start
+    &__img
+      width: 100%
 @media ( max-width: 950px )
-  section
-    margin-top: 50px
   .works
     &__inner
       flex-direction: column
@@ -32,7 +37,7 @@
     &__descr
       order: -1
       padding-left: 0
-      max-width: 100%
+      // max-width: 100%
       margin-bottom: 30px
       &-title
         text-align: center
