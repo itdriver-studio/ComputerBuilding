@@ -25,6 +25,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  background-color: #000;
+}
+
+section {
+  margin-top: 200px;
 }
 
 .container {
@@ -180,6 +185,19 @@ body {
   margin-left: 30px;
 }
 
-.works {
-  background-color: #000;
+.works__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.works__descr {
+  max-width: 636px;
+}
+.works__descr-title {
+  font-size: 48px;
+  line-height: 67px;
+  margin-bottom: 45px;
+}
+.works__descr-text {
+  line-height: 26px;
 }

@@ -22,8 +22,10 @@ body
   font-weight: 400
   font-size: 16px
   line-height: 24px
-  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%)
+  background-color: #000
 
+section
+  margin-top: 200px
 .container
   max-width: 1320px
   padding: 0 10px
@@ -146,4 +148,15 @@ body
       margin-left: 30px
 
 .works
-  background-color: #000
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__descr
+    max-width: 636px
+    &-title
+      font-size: 48px
+      line-height: 67px
+      margin-bottom: 45px
+    &-text
+      line-height: 26px

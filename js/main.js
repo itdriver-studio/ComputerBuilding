@@ -15,7 +15,7 @@ burger.onclick = () => {
 
 let seconds = document.querySelector('#seconds');
 let minutes = document.querySelector('#minutes');
-let totalTime = 3600;
+let totalTime = 3599;
 
 setInterval(() => {
   let m = Math.floor(totalTime / 60);
