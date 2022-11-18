@@ -192,6 +192,7 @@ section {
 }
 .works__descr {
   max-width: 636px;
+  padding-left: 50px;
 }
 .works__descr-title {
   font-size: 48px;

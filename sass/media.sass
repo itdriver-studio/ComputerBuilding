@@ -22,6 +22,21 @@
         flex-wrap: wrap
     &__progressbar
       width: 100%
+@media ( max-width: 950px )
+  section
+    margin-top: 50px
+  .works
+    &__inner
+      flex-direction: column
+      align-items: center
+    &__descr
+      order: -1
+      padding-left: 0
+      max-width: 100%
+      margin-bottom: 30px
+      &-title
+        text-align: center
+        margin-bottom: 30px
 @media ( max-width: 850px )
   .nav
     &__list
@@ -39,7 +54,6 @@
           z-index: 10
       &-menuimg
         display: block
-        // transition: all .5s
         z-index: 2
         &--close
           transform: scaleY(-1)
@@ -49,6 +63,13 @@
       text-align: center
       margin: 0 0 10px
       padding: 12px
+  .works
+    &__descr
+      &-title
+        font-size: 35px
+        line-height: 42px
+    &__img
+      max-width: 100%
 @media ( max-width: 570px )
   .header
     &__title
