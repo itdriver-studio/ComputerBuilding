@@ -370,3 +370,55 @@ h2 {
   border-radius: 50px;
   border: 1px solid #fff;
 }
+
+.footer {
+  margin-top: 60px;
+}
+.footer__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer__text {
+  text-align: center;
+  opacity: 0.5;
+  max-width: 411px;
+  margin: 0 auto 60px;
+}
+.footer input[type=email] {
+  background: rgba(245, 255, 255, 0.25);
+  width: 100%;
+  border: none;
+  outline: transparent;
+  padding: 11px 30px;
+  border-radius: 50px;
+}
+.footer input[type=email]::placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+.footer__subscribe {
+  position: relative;
+  max-width: 492px;
+  margin: 0 auto 60px;
+}
+.footer__btn {
+  padding: 10px 30px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.footer__social-link + .footer__social-link {
+  margin-left: 30px;
+}

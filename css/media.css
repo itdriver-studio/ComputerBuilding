@@ -197,3 +197,14 @@
     font-size: 12px;
   }
 }
+.footer__subscribe {
+  margin-bottom: 0;
+}
+.footer__btn {
+  position: static;
+  display: block;
+  margin: 10px auto 0;
+}
+.footer__social {
+  margin-top: 20px;
+}
