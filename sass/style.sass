@@ -6,7 +6,7 @@
   font-display: swap
 @font-face
   font-family: 'Roboto', sans-serif
-  src: url("../fonts/Roboto-Medium.woff2"), url("../fonts/Roboto-Mrdium.woff")
+  src: url("../fonts/Roboto-Medium.woff2"), url("../fonts/Roboto-Medium.woff")
   font-style: normal
   font-weight: 500
   font-display: swap
@@ -206,7 +206,6 @@ h2
         height: 100%
         object-fit: contain
 .study
-  margin-bottom: 170px
   &__title
     text-align: center
     margin-bottom: 30px
@@ -260,3 +259,40 @@ h2
       margin-bottom: 10px
     &-text
       line-height: 29px
+
+.tutors
+  &__title
+    margin-bottom: 113px
+    padding-left: 128px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 90px
+      height: 44px
+      left: 0
+      top: -15px
+      background-image: url(../img/tutor-logo.svg)
+  &__cards
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &__card
+    text-align: center
+    max-width: 358px
+    margin-bottom: 50px
+    padding: 0 20px
+  &__img
+    margin-bottom: 40px
+  &__name
+    margin-bottom: 15px
+    font-weight: 500
+    font-size: 24px
+    line-height: 34px
+  &__occupation
+    margin-bottom: 30px
+    line-height: 26px
+  &__link
+    padding: 10px 30px
+    border-radius: 50px
+    border: 1px solid #fff
