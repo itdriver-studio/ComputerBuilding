@@ -70,6 +70,7 @@
       max-width: 100%
 @media ( max-width: 750px )
   .occupation
+    margin-bottom: 100px
     &__title
       margin-bottom: 50px
     &__inner
@@ -81,6 +82,15 @@
         margin-bottom: 20px
     &__card+ &__card
       margin-left: 0
+  .brands
+    &__title
+      text-align: center
+      padding-left: 0
+      padding-top: 50px
+      &::before
+        left: 50%
+        transform: translateX(-50%)
+        top: -20px
 @media ( max-width: 570px )
   .header
     &__title
@@ -127,3 +137,7 @@
         padding-bottom: 5px
         line-height: 18px
         font-size: 11px
+  .brands
+    &__title
+      font-size: 35px
+      margin-bottom: 20px

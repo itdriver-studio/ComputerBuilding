@@ -87,6 +87,9 @@
   }
 }
 @media (max-width: 750px) {
+  .occupation {
+    margin-bottom: 100px;
+  }
   .occupation__title {
     margin-bottom: 50px;
   }
@@ -102,6 +105,16 @@
   }
   .occupation__card + .occupation__card {
     margin-left: 0;
+  }
+  .brands__title {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .brands__title::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
   }
 }
 @media (max-width: 570px) {
@@ -154,5 +167,9 @@
     padding-bottom: 5px;
     line-height: 18px;
     font-size: 11px;
+  }
+  .brands__title {
+    font-size: 35px;
+    margin-bottom: 20px;
   }
 }

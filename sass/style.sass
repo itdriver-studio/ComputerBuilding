@@ -26,6 +26,9 @@ body
 
 section
   margin-top: 200px
+h2
+  font-size: 48px
+  line-height: 67px
 .container
   max-width: 1320px
   padding: 0 10px
@@ -156,8 +159,6 @@ section
     max-width: 636px
     padding-left: 50px
     &-title
-      font-size: 48px
-      line-height: 67px
       margin-bottom: 20px
     &-text
       line-height: 26px
@@ -166,8 +167,6 @@ section
   text-align: center
   margin-bottom: 200px
   &__title
-    font-size: 48px
-    line-height: 67px
     margin-bottom: 120px
   &__inner
     display: flex
@@ -180,3 +179,29 @@ section
       margin-bottom: 30px
   &__card+ &__card
     margin-left: 35px
+
+.brands
+  &__title
+    margin-bottom: 69px
+    padding-left: 110px
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      width: 78px
+      height: 78px
+      left: 0
+      background-image: url('../img/brands-logo.svg')
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+  &__card
+    padding: 29px 60px
+    &-img
+      width: 198px
+      height: 93px
+      & img
+        width: 100%
+        height: 100%
+        object-fit: contain

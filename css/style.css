@@ -32,6 +32,11 @@ section {
   margin-top: 200px;
 }
 
+h2 {
+  font-size: 48px;
+  line-height: 67px;
+}
+
 .container {
   max-width: 1320px;
   padding: 0 10px;
@@ -195,8 +200,6 @@ section {
   padding-left: 50px;
 }
 .works__descr-title {
-  font-size: 48px;
-  line-height: 67px;
   margin-bottom: 20px;
 }
 .works__descr-text {
@@ -208,8 +211,6 @@ section {
   margin-bottom: 200px;
 }
 .occupation__title {
-  font-size: 48px;
-  line-height: 67px;
   margin-bottom: 120px;
 }
 .occupation__inner {
@@ -227,4 +228,35 @@ section {
 }
 .occupation__card + .occupation__card {
   margin-left: 35px;
+}
+
+.brands__title {
+  margin-bottom: 69px;
+  padding-left: 110px;
+  position: relative;
+}
+.brands__title::before {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 78px;
+  left: 0;
+  background-image: url("../img/brands-logo.svg");
+}
+.brands__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.brands__card {
+  padding: 29px 60px;
+}
+.brands__card-img {
+  width: 198px;
+  height: 93px;
+}
+.brands__card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
