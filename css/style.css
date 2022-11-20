@@ -202,3 +202,29 @@ section {
 .works__descr-text {
   line-height: 26px;
 }
+
+.occupation {
+  text-align: center;
+  margin-bottom: 200px;
+}
+.occupation__title {
+  font-size: 48px;
+  line-height: 67px;
+  margin-bottom: 120px;
+}
+.occupation__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.occupation__card {
+  max-width: 358px;
+}
+.occupation__card-img {
+  margin-bottom: 60px;
+}
+.occupation__card-title {
+  margin-bottom: 30px;
+}
+.occupation__card + .occupation__card {
+  margin-left: 35px;
+}

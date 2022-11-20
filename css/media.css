@@ -22,7 +22,7 @@
 }
 @media (max-width: 1180px) {
   section {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   .header__bottom-inner {
     flex-wrap: wrap;
@@ -33,8 +33,8 @@
   .works__inner {
     align-items: flex-start;
   }
-  .works__img, .works__descr {
-    width: 100%;
+  .works__img {
+    max-width: 100%;
   }
 }
 @media (max-width: 850px) {
@@ -81,6 +81,27 @@
   }
   .works__image {
     max-width: 50%;
+  }
+  .works__descr {
+    max-width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .occupation__title {
+    margin-bottom: 50px;
+  }
+  .occupation__inner {
+    flex-wrap: wrap;
+  }
+  .occupation__card {
+    min-width: 100%;
+    margin-bottom: 50px;
+  }
+  .occupation__card-img {
+    margin-bottom: 20px;
+  }
+  .occupation__card + .occupation__card {
+    margin-left: 0;
   }
 }
 @media (max-width: 570px) {

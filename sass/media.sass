@@ -17,7 +17,7 @@
         margin-bottom: 16px
 @media ( max-width: 1180px )
   section
-    margin-top: 50px
+    margin-top: 100px
   .header
     &__bottom
       &-inner
@@ -27,8 +27,8 @@
   .works
     &__inner
       align-items: flex-start
-    &__img, &__descr
-      width: 100%
+    &__img
+      max-width: 100%
 
 @media ( max-width: 850px )
   .nav
@@ -66,6 +66,21 @@
         line-height: 42px
     &__image
       max-width: 50%
+    &__descr
+      max-width: 100%
+@media ( max-width: 750px )
+  .occupation
+    &__title
+      margin-bottom: 50px
+    &__inner
+      flex-wrap: wrap
+    &__card
+      min-width: 100%
+      margin-bottom: 50px
+      &-img
+        margin-bottom: 20px
+    &__card+ &__card
+      margin-left: 0
 @media ( max-width: 570px )
   .header
     &__title
