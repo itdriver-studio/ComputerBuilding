@@ -128,7 +128,6 @@
     &__item
       & + .countdown__item
         margin-left: 15px
-
       &-num
         padding: 5px 17px 0
         font-size: 18px
@@ -141,3 +140,13 @@
     &__title
       font-size: 35px
       margin-bottom: 20px
+  .study
+    &__week
+      &::before
+        width: 20px
+      &:nth-child(2n-1)
+        padding-right: 30px
+      &:nth-child(2n)
+        padding-left: 30px
+      &-text
+        font-size: 12px

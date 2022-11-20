@@ -172,4 +172,16 @@
     font-size: 35px;
     margin-bottom: 20px;
   }
+  .study__week::before {
+    width: 20px;
+  }
+  .study__week:nth-child(2n-1) {
+    padding-right: 30px;
+  }
+  .study__week:nth-child(2n) {
+    padding-left: 30px;
+  }
+  .study__week-text {
+    font-size: 12px;
+  }
 }
